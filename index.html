@@ -7,14 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            background-color: #277727;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
         }
         .brand-btn {
             transition: all 0.3s ease;
         }
         .brand-btn:hover {
             transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15);
         }
         .logo-container {
             width: 44px;
@@ -32,11 +32,12 @@
     <div class="max-w-md w-full mx-auto">
         <!-- Header -->
         <div class="text-center mb-10">
-            <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl mb-4 overflow-hidden shadow-lg bg-white/10">
-                <img src="wilrichmyer.png" alt="Wilrich Myer Logo" class="w-full h-full object-cover">
+            <!-- Expanded logo container optimized for horizontal branding -->
+            <div class="inline-flex items-center justify-center bg-white/80 backdrop-blur-sm px-6 py-4 rounded-2xl mb-4 shadow-sm border border-gray-100 max-w-full">
+                <img src="image_bca820.png" alt="Wilrich Myer Logo" class="h-12 w-auto object-contain">
             </div>
-            <h1 class="text-4xl font-bold text-white">Wilrich Myer</h1>
-            <p class="text-green-100 mt-2 text-lg opacity-90">Follow us on all platforms</p>
+            <h1 class="text-4xl font-bold text-gray-900 mt-2">Wilrich Myer</h1>
+            <p class="text-gray-600 mt-2 text-lg">Follow us on all platforms</p>
         </div>
 
         <!-- Social Profiles Links -->
@@ -78,7 +79,7 @@
                class="brand-btn flex items-center gap-4 bg-[#FF0000] text-white p-5 rounded-2xl shadow-md hover:bg-[#cc0000]">
                 <div class="logo-container bg-white/20 rounded-xl">
                     <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93 Rhine.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 Rhine9.376.505 Rhine9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 Rhine24 12 24 12s0-3.93 Rhine-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                     </svg>
                 </div>
                 <div>
@@ -108,7 +109,7 @@
                class="brand-btn flex items-center gap-4 bg-[#0A66C2] text-white p-5 rounded-2xl shadow-md hover:bg-[#0958a8]">
                 <div class="logo-container bg-white/20 rounded-xl">
                     <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 Rhine1.637-1.85 Rhine3.37-1.85 Rhine3.601 0 4.267 2.37 Rhine4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227 Rhine.792 24 Rhine1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/>
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/>
                     </svg>
                 </div>
                 <div>
@@ -134,7 +135,7 @@
 
         </div>
 
-        <div class="text-center mt-10 text-green-100 text-sm opacity-80">
+        <div class="text-center mt-10 text-gray-500 text-sm">
             Scan the QR code to open this page
         </div>
     </div>
